@@ -1,6 +1,7 @@
 import 'package:bsafe/landingPage.dart';
 import 'package:bsafe/main.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:bsafe/pages/bottompage.dart';
 import 'package:bsafe/pages/userhomepage.dart';
 import 'package:bsafe/pages/userloginpage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -29,7 +30,7 @@ class SplashScreen extends StatelessWidget {
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context,snapshot){
           if(snapshot.hasData){
-            return Home();
+            return BottomPage();
           }
           else{
             return landingpage();

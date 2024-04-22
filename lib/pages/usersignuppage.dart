@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../components/services/googleauth.dart';
 import '../components/squaretiles.dart';
 import 'forgotpass.dart';
 
@@ -288,13 +289,15 @@ class _signupState extends State<signup> {
                             children: [
                               //google
                               squaretiles(
-                                  imagePath: "assets/usinglogo/google.png"),
+                                  imagePath: "assets/usinglogo/google.png",
+                                  onTap: () =>AuthServices().signInGoogleServices(),
+                              ),
 
                               const SizedBox(width: 30),
 
                               //facebook
                               squaretiles(
-                                  imagePath: "assets/usinglogo/facebook.png"),
+                                  imagePath: "assets/usinglogo/facebook.png", onTap: () {  },),
 
                             ],
                           ),

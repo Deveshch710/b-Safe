@@ -1,3 +1,4 @@
+import 'package:bsafe/components/services/googleauth.dart';
 import 'package:bsafe/components/squaretiles.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -175,12 +176,16 @@ class loginpage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             //google
-                            squaretiles(imagePath: "assets/usinglogo/google.png"),
+                            squaretiles(imagePath: "assets/usinglogo/google.png",
+                              onTap: () =>AuthServices().signInGoogleServices(),
+                            ),
 
                             const SizedBox(width: 30),
 
                             //facebook
-                            squaretiles(imagePath: "assets/usinglogo/facebook.png"),
+                            squaretiles(imagePath: "assets/usinglogo/facebook.png",
+                              onTap: () {  },
+                            ),
 
                           ],
                         ),

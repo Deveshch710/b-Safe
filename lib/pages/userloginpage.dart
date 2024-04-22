@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+import '../components/services/googleauth.dart';
 import '../components/squaretiles.dart';
 import 'forgotpass.dart';
 
@@ -268,13 +269,14 @@ class _LoginpageState extends State<Loginpage> {
                             children: [
                               //google
                               squaretiles(
+                                  onTap: () =>AuthServices().signInGoogleServices(),
                                   imagePath: "assets/usinglogo/google.png"),
 
                               const SizedBox(width: 30),
 
                               //facebook
                               squaretiles(
-                                  imagePath: "assets/usinglogo/facebook.png"),
+                                  imagePath: "assets/usinglogo/facebook.png", onTap: () {  },),
 
                             ],
                           ),
