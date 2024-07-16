@@ -98,3 +98,11 @@ Here's what we have developed!
 
 <img src="https://github.com/user-attachments/assets/8f4940e3-013e-40ab-af60-8ea1aab9ae79">
 
+## Acknowledgements
+
+- Our mentors and professors  and team members for their dedication, hard work, and collaborative spirit.
+- The Developers of the Technology used in this project
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details. [MIT](https://choosealicense.com/licenses/mit/)
